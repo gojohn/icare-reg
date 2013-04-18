@@ -1,0 +1,20 @@
+.outer(ng-controller="ListCtrl")
+  %table.table-striped.big#main
+    %thead
+      %tr
+        %th First Name
+        %th Last Name
+        %th(width="200") Check In Time
+        %th(width="200") Return Time
+    %tbody
+      %tr(ng-repeat="reg in registrations")
+        %td
+          {{reg.first_name}}
+        %td
+          {{reg.last_name}}
+        %td
+          {{reg.checkin_time}}
+          %button.btn Check In
+        %td
+          {{reg.return_time}}
+          %button.btn Return

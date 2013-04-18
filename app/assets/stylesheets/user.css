@@ -1,0 +1,39 @@
+body{  
+   text-align:center; /*For IE6 Shenanigans*/  
+} 
+
+label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.outer {
+  width: 850px;
+  margin:0 auto;
+}
+
+.outer * {
+  text-align: left; 
+}
+
+.btn {
+  text-align: center;
+}
+
+#main {
+  width: 850px;
+}
+
+table.big {
+  font-size: 20px;
+}
+
+.table-striped th,
+.table-striped td {
+  text-align:left;
+}
+
+.table-striped tr:hover {
+  cursor: pointer;
+  background-color: #46d5f5;
+}

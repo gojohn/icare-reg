@@ -1,0 +1,29 @@
+!!!
+%html(ng-app="icare")
+  %head
+    %title 
+      Lions
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "jquery", "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.3/angular.min.js", "https://ajax.googleapis.com/ajax/libs/angularjs/1.1.3/angular-resource.min.js", "lib/bootstrap.min.js", "js/app", "js/registrations"
+    = csrf_meta_tags
+
+  %body
+  .outer
+    = image_tag("index2013.jpg", :size =>"850x148")
+    .navbar
+      .navbar-inner
+        %a.brand(href="#")
+          I Care 2013 Classic
+        %ul.nav
+          %li.home
+            %a(href="#home")
+              Home
+          %li.list
+            %a(href="#list")
+              Runner List
+          %li.register
+            %a(href="#register")
+              Register New Runner
+
+
+  .outer(ng-view)

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="icare">
+<head>
+  <title>Lions</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js", "users", "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body ng-controller="UserController">
+<div ng-repeat="user in users">{{user.name}}</div>
+<%= yield %>
+
+</body>
+</html>

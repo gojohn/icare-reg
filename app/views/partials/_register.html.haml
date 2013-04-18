@@ -1,0 +1,58 @@
+%form
+  %fieldset
+    %legend 
+      Register a New Runner
+    %div.pull-left
+      %label
+        Name
+      %input(type="text" placeholder="First Name")
+      %input(type="text" placeholder="Last Name")
+      %br
+      %label
+        Email
+      %input(type="text" placeholder="newuser@email.com")
+      %label
+        Phone Number
+      %input(type="text" placeholder="xxx-xxx-xxxx")
+      %label
+        Gender
+      %span.checkbox.inline
+        %input(type="checkbox") 
+          M
+      %span.checkbox.inline
+        %input(type="checkbox") 
+          F
+      %br
+      %br
+      %label
+        Payment
+      %input(type="text" placeholder="example - $40")
+      %label
+        Would you like to make an additional donation?
+      %input(type="text" placeholder="recommended - $10")
+
+    %div.pull-left(style="padding-left:40px")
+      %label
+        Address
+      %input.input-xlarge(type="text" placeholder="123 Somewhere Street")
+      %br
+      %input(type="text" placeholder="City")
+      %br
+      %input.inline.input-mini(type="text" placeholder="CA")
+      %input.inline.input-small(type="text" placeholder="Zip Code")
+      %label
+        Emergency Contact Information
+      %input(type="text" placeholder="Full Name")
+      %br
+      %input(type="text" placeholder="Phone Number")
+      %br
+      %span.checkbox.inline
+        %input(type="checkbox") 
+          Family?
+      %span.checkbox.inline
+        %input(type="checkbox") 
+          Runners Ride?
+    %br
+    %br
+    %button.btn.btn-large.btn-block(type="submit")
+      Submit
