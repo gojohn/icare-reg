@@ -10,6 +10,7 @@ app.factory( 'Registration', function( $resource ) {
 
 function ListCtrl($scope, Registration) {
   $scope.registrations = Registration.query();
+  $scope.foo;
 }
 
 function RegistrationCtrl($scope, Registration) {

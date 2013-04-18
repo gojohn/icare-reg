@@ -12057,3 +12057,261 @@ Completed 200 OK in 96ms (Views: 88.5ms | ActiveRecord: 2.5ms)
 
 Started GET "/assets/icare.gif" for 127.0.0.1 at 2013-04-17 21:54:31 -0700
 Served asset /icare.gif - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 22:14:40 -0700
+  Processing by HomeController#index as HTML
+Compiled application.css  (1ms)  (pid 34682)
+Compiled bootstrap.min.css  (1ms)  (pid 34682)
+Compiled user.css  (0ms)  (pid 34682)
+Compiled jquery.js  (4ms)  (pid 34682)
+Compiled lib/bootstrap.min.js  (0ms)  (pid 34682)
+Compiled js/app.js  (0ms)  (pid 34682)
+Compiled js/registrations.js  (0ms)  (pid 34682)
+Rendered home/index.html.haml (141.1ms)
+Completed 200 OK in 171ms (Views: 170.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /user.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /lib/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/app.js?body=1" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /js/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/registrations.js?body=1" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /js/registrations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index2013.jpg" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+Served asset /index2013.jpg - 304 Not Modified (4ms)
+
+
+Started GET "/partials/list.html" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+  Processing by PartialsController#list as HTML
+Rendered partials/_list.html.haml (6.6ms)
+Completed 200 OK in 20ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations" for 127.0.0.1 at 2013-04-17 22:14:41 -0700
+  Processing by RegistrationsController#index as HTML
+  [1m[36mRegistration Load (1.5ms)[0m  [1mSELECT `registrations`.* FROM `registrations` [0m
+Completed 200 OK in 64ms (Views: 57.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+  Processing by HomeController#index as HTML
+Compiled js/registrations.js  (0ms)  (pid 34682)
+Rendered home/index.html.haml (10.8ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /lib/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/app.js?body=1" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /js/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/registrations.js?body=1" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /js/registrations.js - 200 OK (0ms)
+
+
+Started GET "/partials/list.html" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+  Processing by PartialsController#list as HTML
+Rendered partials/_list.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index2013.jpg" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+Served asset /index2013.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/registrations" for 127.0.0.1 at 2013-04-17 22:15:17 -0700
+  Processing by RegistrationsController#index as HTML
+  [1m[35mRegistration Load (2.7ms)[0m  SELECT `registrations`.* FROM `registrations` 
+Completed 200 OK in 77ms (Views: 66.5ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml (6.6ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /lib/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/app.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /js/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/registrations.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /js/registrations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index2013.jpg" for 127.0.0.1 at 2013-04-17 22:17:29 -0700
+Served asset /index2013.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/partials/list.html" for 127.0.0.1 at 2013-04-17 22:17:30 -0700
+  Processing by PartialsController#list as HTML
+Rendered partials/_list.html.haml (44.4ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations" for 127.0.0.1 at 2013-04-17 22:17:30 -0700
+  Processing by RegistrationsController#index as HTML
+  [1m[36mRegistration Load (1.2ms)[0m  [1mSELECT `registrations`.* FROM `registrations` [0m
+Completed 200 OK in 71ms (Views: 64.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml (6.9ms)
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /lib/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/app.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /js/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/registrations.js?body=1" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /js/registrations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/index2013.jpg" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+Served asset /index2013.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/partials/list.html" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+  Processing by PartialsController#list as HTML
+Rendered partials/_list.html.haml (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/registrations" for 127.0.0.1 at 2013-04-17 22:17:34 -0700
+  Processing by RegistrationsController#index as HTML
+  [1m[35mRegistration Load (1.2ms)[0m  SELECT `registrations`.* FROM `registrations` 
+Completed 200 OK in 73ms (Views: 66.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+  Processing by HomeController#index as HTML
+Rendered home/index.html.haml (7.2ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /bootstrap.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/user.css?body=1" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /user.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /lib/bootstrap.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/app.js?body=1" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /js/app.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/registrations.js?body=1" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /js/registrations.js - 304 Not Modified (0ms)
+
+
+Started GET "/partials/list.html" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+  Processing by PartialsController#list as HTML
+Rendered partials/_list.html.haml (4.2ms)
+Completed 200 OK in 7ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index2013.jpg" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+Served asset /index2013.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/registrations" for 127.0.0.1 at 2013-04-17 22:18:24 -0700
+  Processing by RegistrationsController#index as HTML
+  [1m[36mRegistration Load (1.3ms)[0m  [1mSELECT `registrations`.* FROM `registrations` [0m
+Completed 200 OK in 93ms (Views: 87.0ms | ActiveRecord: 2.7ms)

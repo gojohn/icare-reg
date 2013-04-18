@@ -1,4 +1,5 @@
 .outer(ng-controller="ListCtrl")
+  %input(ng-model="search")
   %table.table-striped.big#main
     %thead
       %tr
@@ -7,7 +8,7 @@
         %th(width="200") Check In Time
         %th(width="200") Return Time
     %tbody
-      %tr(ng-repeat="reg in registrations")
+      %tr(ng-repeat="reg in registrations | filter:search")
         %td
           {{reg.first_name}}
         %td
