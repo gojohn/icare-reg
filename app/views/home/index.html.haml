@@ -13,17 +13,7 @@
     .navbar
       .navbar-inner
         %a.brand(href="#")
-          I Care 2013 Classic
-        %ul.nav
-          %li.home
-            %a(href="#home")
-              Home
-          %li.list
-            %a(href="#list")
-              Runner List
-          %li.register
-            %a(href="#register")
-              Register New Runner
+          I Care 2013 Classic - New Runner Registrations
 
-
-  .outer(ng-view)
+  .outer(ng-controller="RegisterCtrl")
+    %ng-include(src="'/partials/register'")

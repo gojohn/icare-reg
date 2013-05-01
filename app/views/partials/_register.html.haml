@@ -5,54 +5,60 @@
     %div.pull-left
       %label
         Name
-      %input(type="text" placeholder="First Name")
-      %input(type="text" placeholder="Last Name")
+      %input(type="text" placeholder="First Name" ng-model="first_name")
+      %input(type="text" placeholder="Last Name" ng-model="last_name")
       %br
       %label
         Email
-      %input(type="text" placeholder="newuser@email.com")
+      %input(type="text" placeholder="newuser@email.com" ng-model="email")
       %label
         Phone Number
-      %input(type="text" placeholder="xxx-xxx-xxxx")
+      %input(type="text" placeholder="xxx-xxx-xxxx" ng-model="phone")
       %label
         Gender
       %span.checkbox.inline
-        %input(type="checkbox") 
+        %input(type="radio" name="gender" ng-model="gender" value="male") 
           M
       %span.checkbox.inline
-        %input(type="checkbox") 
+        %input(type="radio" name="gender" ng-model="gender" value="female") 
           F
       %br
       %br
       %label
         Payment
-      %input(type="text" placeholder="example - $40")
+      %input(type="text" placeholder="example - $40" ng-model="payment")
       %label
         Would you like to make an additional donation?
-      %input(type="text" placeholder="recommended - $10")
+      %input(type="text" placeholder="recommended - $10" ng-model="addl_donation")
 
     %div.pull-left(style="padding-left:40px")
       %label
         Address
-      %input.input-xlarge(type="text" placeholder="123 Somewhere Street")
+      %input.input-xlarge(type="text" placeholder="123 Somewhere Street" ng-model="address")
       %br
-      %input(type="text" placeholder="City")
+      %input(type="text" placeholder="City" ng-model="city")
       %br
-      %input.inline.input-mini(type="text" placeholder="CA")
-      %input.inline.input-small(type="text" placeholder="Zip Code")
+      %input.inline.input-mini(type="text" placeholder="CA" ng-model="state")
+      %input.inline.input-small(type="text" placeholder="Zip Code" ng-model="zip")
       %label
         Emergency Contact Information
-      %input(type="text" placeholder="Full Name")
+      %input(type="text" placeholder="Full Name" ng-model="emergency_contact")
       %br
-      %input(type="text" placeholder="Phone Number")
+      %input(type="text" placeholder="Phone Number" ng-model="emergency_phone")
       %br
       %span.checkbox.inline
-        %input(type="checkbox") 
+        %input(type="checkbox" ng-model="is_family") 
           Family?
       %span.checkbox.inline
-        %input(type="checkbox") 
+        %input(type="checkbox" ng-model="ride") 
           Runners Ride?
+      %br
+      %br
+      %label
+        Shirt Size
+      %input(type="text" placeholder="Shirt Size" ng-model="shirt_size")
+      %br
     %br
     %br
-    %button.btn.btn-large.btn-block(type="submit")
+    %button.btn.btn-large.btn-block(type="submit" ng-click="submit(this)")
       Submit

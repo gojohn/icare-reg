@@ -3,8 +3,8 @@ Lions::Application.routes.draw do
   # first created -> highest priority.
 
   # Sample of regular route:
-     match 'registrations' => 'registrations#index'
      match 'partials/:action' => 'partials'
+     match 'list' => 'list'
   # Keep in mind you can assign values other than :controller and :action
 
   # Sample of named route:
@@ -12,7 +12,7 @@ Lions::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+     resources :registrations
 
   # Sample resource route with options:
   #   resources :products do
