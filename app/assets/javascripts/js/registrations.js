@@ -47,7 +47,6 @@ function RegisterCtrl($scope, Registration) {
     aForm.zip='';
     aForm.emergency_contact='';
     aForm.emergency_phone='';
-    aForm.is_family='';
     aForm.ride='';
     aForm.shirt_size='';
   };
@@ -69,7 +68,6 @@ function RegisterCtrl($scope, Registration) {
       zip: aForm.zip,
       emergency_contact: aForm.emergency_contact,
       emergency_phone: aForm.emergency_phone,
-      is_family: aForm.is_family,
       ride: aForm.ride,
       shirt_size: aForm.shirt_size
     });
@@ -89,7 +87,6 @@ function RegisterCtrl($scope, Registration) {
       aForm.zip='';
       aForm.emergency_contact='';
       aForm.emergency_phone='';
-      aForm.is_family='';
       aForm.ride='';
       aForm.shirt_size='';
     });
