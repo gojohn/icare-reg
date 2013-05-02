@@ -13,35 +13,39 @@
     .navbar
       .navbar-inner
         %a.brand(href="#")
-          I Care 2013 Classic - Runners
+          I Care 2013 Classic - Riders
         %input(ng-model="search" style="margin-top:6px;" placeholder="Search")
     .outer(ng-controller="ListCtrl")
       %table.table-striped.big#main
         %thead
           %tr
-            %th First Name
-            %th Last Name
-            %th Size
-            %th(width="200") Check In Time
-            %th(width="200") Return Time
-            %th(width="200") Emer. Contcat
+            %th Name
+            %th(width="100") Ride
+            %th(width="170") Check-In Time
+            %th(width="160") Return Time
+            %th(width="200") Emer. Contact
         %tbody
           %tr(ng-repeat="reg in registrations | filter:search")
             %td
               {{reg.first_name.slice(0,12)}}
-            %td
               {{reg.last_name.slice(0,12)}}
+              %br
+              {{reg.phone}}
+              %br
+              %br
             %td
-              {{reg.shirt_size.slice(0,4)}}
+              {{reg.ride.slice(0,12)}}
             %td
+              %button.btn(ng-click="checkIn(reg.registration_id)")Check In
               {{reg.checkin_time.slice(11,-4)}}
-              %button.btn(ng-click="checkIn(reg.registration_id)") Check In
             %td
-              {{reg.return_time.slice(11,-4)}}
               %button.btn(ng-click="return(reg.registration_id)")Return
+              {{reg.return_time.slice(11,-4)}}
             %td
               {{reg.emergency_contact}}
               %br
               {{reg.emergency_phone}}
+              %br
+              %br
 
   .outer(ng-view)

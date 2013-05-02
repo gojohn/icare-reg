@@ -30,7 +30,7 @@ function RegistrationCtrl($scope, Registration) {
 
 function RegisterCtrl($scope, Registration) {
 //  $scope.registrations = Registration.query();
-  $scope.first_name="pe";
+//  $scope.first_name="pe";
 
   var clearIt = function () {
     console.log($scope);
