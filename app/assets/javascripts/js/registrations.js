@@ -31,6 +31,8 @@ function RegistrationCtrl($scope, Registration) {
 function RegisterCtrl($scope, Registration) {
 //  $scope.registrations = Registration.query();
 //  $scope.first_name="pe";
+  $scope.ride="100 km";
+  $scope.shirt_size="L";
 
   var clearIt = function () {
     console.log($scope);
@@ -87,8 +89,8 @@ function RegisterCtrl($scope, Registration) {
       aForm.zip='';
       aForm.emergency_contact='';
       aForm.emergency_phone='';
-      aForm.ride='';
-      aForm.shirt_size='';
+      aForm.ride='100 km';
+      aForm.shirt_size='L';
     });
   };
   
