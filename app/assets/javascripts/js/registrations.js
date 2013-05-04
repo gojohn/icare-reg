@@ -18,7 +18,7 @@ function ListCtrl($scope, Registration) {
   };
 
   $scope.return = function (regid) {
-    var reg = Registration.update({id:regid, return_time: 1}, function () {
+    var reg = Registration.update({id:$scope.edit_me.registration_id, return_time: 1}, function () {
       $scope.registrations = Registration.query();
     });
   };
