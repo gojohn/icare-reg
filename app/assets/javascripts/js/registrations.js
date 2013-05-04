@@ -10,6 +10,7 @@ app.factory( 'Registration', function( $resource ) {
 
 function ListCtrl($scope, Registration) {
   $scope.registrations = Registration.query();
+
   $scope.checkIn = function (regid) {
     var reg = Registration.update({id:regid, checkin_time: 1}, function () {
       $scope.registrations = Registration.query();
@@ -20,6 +21,24 @@ function ListCtrl($scope, Registration) {
     var reg = Registration.update({id:regid, return_time: 1}, function () {
       $scope.registrations = Registration.query();
     });
+  };
+
+  $scope.update = function () {
+    console.log($scope.edit_me.ride);
+    var reg = Registration.update({
+        id:         $scope.edit_me.registration_id,
+        ride:       $scope.edit_me.ride,
+        bib_number: $scope.edit_me.bib_number,
+        checkin_time: 1
+      }, function () {
+        $scope.registrations = Registration.query();
+      }
+    );
+  };
+
+  $scope.do = function (reg) {
+    console.log('done did');
+    $scope.edit_me = reg;
   };
 
 }

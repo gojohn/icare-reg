@@ -33,10 +33,11 @@
               {{reg.phone}}
               %br
               %br
-            %td
+            %td 
               {{reg.ride.slice(0,12)}}
             %td
-              %button.btn(ng-click="checkIn(reg.registration_id)")Check In
+              %a.btn(data-toggle="modal" href="#myModal" role="button" ng-click="do(reg)")
+                Check In
               {{reg.checkin_time.slice(11,-4)}}
             %td
               %button.btn(ng-click="return(reg.registration_id)")Return
@@ -47,5 +48,26 @@
               {{reg.emergency_phone}}
               %br
               %br
+      #myModal.modal.hide.fade
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+          %h3 {{edit_me.first_name}} {{edit_me.last_name}} - Update Ride Info
+        .modal-body
+            
+          %p 
+            Ride
+            %select(placeholder="100 mi hilly" ng-model="edit_me.ride")
+              %option 20 mi
+              %option 50 km
+              %option 100 km
+              %option 100mi flat
+              %option 100mi hilly
+          %p
+            BIB Number
+            %input(ng-model="edit_me.bib_number")
+        .modal-footer
+          %a.btn{:href => "#myModal", "data-dismiss" => "modal"} Close
+          %a.btn.btn-primary{:href => "#myModal", "data-dismiss" => "modal", "ng-click"=> "update()"} Save changes
 
   .outer(ng-view)
+
