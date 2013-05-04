@@ -10,6 +10,18 @@ app.factory( 'Registration', function( $resource ) {
 
 function ListCtrl($scope, Registration) {
   $scope.registrations = Registration.query();
+  
+  $scope.order_by = 'last_name';
+  $scope.order_direction = true;
+
+  $scope.orderOn = function ( how ) {
+    if ( $scope.order_by == how ) {
+      $scope.order_direction = !$scope.order_direction;
+    } else {
+      $scope.order_by = how;
+      $scope.order_direction = false;
+    }
+  };
 
   $scope.checkIn = function (regid) {
     var reg = Registration.update({id:regid, checkin_time: 1}, function () {
