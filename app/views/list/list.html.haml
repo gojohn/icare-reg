@@ -59,7 +59,7 @@
         .modal-body
             
           %p 
-            Ride
+            Ride:&nbsp;
             %select(placeholder="100 mi hilly" ng-model="edit_me.ride")
               %option 20 mi
               %option 50 km
@@ -67,10 +67,10 @@
               %option 100mi flat
               %option 100mi hilly
           %p
-            BIB Number
+            Band Number:&nbsp;
             %input(ng-model="edit_me.bib_number")
           %p
-            Payment
+            Payment:&nbsp;
             %select(ng-model="edit_me.payment")
               %option UNPAID
               %option PAID
@@ -79,8 +79,8 @@
               %option(value="95") Family - 95
               %option(value="0") Extra rider - 0
         .modal-footer
-          %a.btn{:href => "#myModal", "data-dismiss" => "modal"} Close
-          %a.btn.btn-primary{:href => "#myModal", "data-dismiss" => "modal", "ng-click"=> "update()"} Save changes
+          %a.btn{:href => "#myModal", "data-dismiss" => "modal"} Cancel
+          %a.btn.btn-primary{:href => "#myModal", "data-dismiss" => "modal", "ng-click"=> "update()"} Check In
 
       #modalCheckIn.modal.hide.fade
         .modal-header
