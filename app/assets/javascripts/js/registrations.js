@@ -24,11 +24,11 @@ function ListCtrl($scope, Registration) {
   };
 
   $scope.update = function () {
-    console.log($scope.edit_me.ride);
     var reg = Registration.update({
         id:         $scope.edit_me.registration_id,
         ride:       $scope.edit_me.ride,
         bib_number: $scope.edit_me.bib_number,
+        payment:    $scope.edit_me.payment,
         checkin_time: 1
       }, function () {
         $scope.registrations = Registration.query();

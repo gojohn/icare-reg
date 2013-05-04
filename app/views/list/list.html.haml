@@ -65,6 +65,14 @@
           %p
             BIB Number
             %input(ng-model="edit_me.bib_number")
+          %p
+            Payment
+            %select(ng-model="edit_me.payment")
+              %option PAID
+              %option Rider - 55
+              %option Tandem - 90
+              %option Family - 95
+              %option Extra rider - 0
         .modal-footer
           %a.btn{:href => "#myModal", "data-dismiss" => "modal"} Close
           %a.btn.btn-primary{:href => "#myModal", "data-dismiss" => "modal", "ng-click"=> "update()"} Save changes
