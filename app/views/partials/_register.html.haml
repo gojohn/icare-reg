@@ -32,12 +32,22 @@
       %br
       %label
         Ride
-      %input(type="text" placeholder="100 mi hilly" ng-model="ride")
+      %select.selectpicker(ng-model="ride")
+        %option 20 mi
+        %option 50 km
+        %option 100 km
+        %option 100 mi flat
+        %option 100 mi hilly
       %br
       %br
       %label
         Shirt Size
-      %input(type="text" placeholder="Shirt Size" ng-model="shirt_size")
+      %select.selectpicker(ng-model="shirt_size")
+        %option S
+        %option M
+        %option(selected="selected") L
+        %option XL
+        %option XXL
       %br
       %label
         Gender
