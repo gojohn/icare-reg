@@ -21,6 +21,7 @@
           %tr
             %th(ng-click="orderOn('last_name')") Name
             %th(width="100" ng-click="orderOn('ride')") Ride
+            %th(ng-click="orderOn('bib_number')") Band&nbsp;
             %th(width="170" ng-click="orderOn('checkin_time')") Check-In Time
             %th(width="160" ng-click="orderOn('return_time')") Return Time
             %th(width="200") Emer. Contact
@@ -35,6 +36,8 @@
               %br
             %td 
               {{reg.ride.slice(0,12)}}
+            %td 
+              {{reg.bib_number}}
             %td
               %a.btn(data-toggle="modal" href="#myModal" role="button" ng-click="do(reg)")
                 Check In
