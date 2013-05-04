@@ -32,8 +32,3 @@ table.big {
 .table-striped td {
   text-align:left;
 }
-
-.table-striped tr:hover {
-  cursor: pointer;
-  background-color: #46d5f5;
-}

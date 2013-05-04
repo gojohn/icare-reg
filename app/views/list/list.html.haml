@@ -21,6 +21,7 @@
           %tr
             %th(ng-click="orderOn('last_name')" style="cursor:pointer") Name
             %th(width="100" ng-click="orderOn('ride')") Ride
+            %th(ng-click="orderOn('bib_number')") Band&nbsp;
             %th(width="170" ng-click="orderOn('checkin_time')") Check-In Time
             %th(width="160" ng-click="orderOn('return_time')") Return Time
             %th(width="200") Emer. Contact
@@ -35,12 +36,15 @@
               %br
             %td 
               {{reg.ride.slice(0,12)}}
+            %td 
+              {{reg.bib_number}}
             %td
               %a.btn(data-toggle="modal" href="#myModal" role="button" ng-click="do(reg)")
                 Check In
               {{reg.checkin_time.slice(11,-4)}}
             %td
-              %button.btn(ng-click="return(reg.registration_id)")Return
+              %a.btn(data-toggle="modal" href="#modalCheckIn" role="button" ng-click="do(reg)")
+                Return
               {{reg.return_time.slice(11,-4)}}
             %td
               {{reg.emergency_contact}}
@@ -51,7 +55,7 @@
       #myModal.modal.hide.fade
         .modal-header
           %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-          %h3 {{edit_me.first_name}} {{edit_me.last_name}} - Update Ride Info
+          %h3 {{edit_me.first_name}} {{edit_me.last_name}} - Check In
         .modal-body
             
           %p 
@@ -76,6 +80,18 @@
         .modal-footer
           %a.btn{:href => "#myModal", "data-dismiss" => "modal"} Close
           %a.btn.btn-primary{:href => "#myModal", "data-dismiss" => "modal", "ng-click"=> "update()"} Save changes
+
+      #modalCheckIn.modal.hide.fade
+        .modal-header
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+          %h3 {{edit_me.first_name}} {{edit_me.last_name}} - Return
+        .modal-body
+            
+          %p 
+            Has this rider returned?
+        .modal-footer
+          %a.btn{:href => "#modalCheckIn", "data-dismiss" => "modal"} No
+          %a.btn.btn-primary{:href => "#modalCheckIn", "data-dismiss" => "modal", "ng-click"=> "return()"} Yes
 
   .outer(ng-view)
 
