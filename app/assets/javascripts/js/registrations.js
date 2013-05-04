@@ -93,7 +93,7 @@ function RegisterCtrl($scope, Registration) {
       email: aForm.email,
       phone: aForm.phone,
       gender: aForm.gender,
-      payment: aForm.payment,
+      payment: "UNPAID",
       addl_donation: aForm.addl_donation,
       address: aForm.address,
       city: aForm.city,
