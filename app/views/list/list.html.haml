@@ -19,13 +19,13 @@
       %table.table-striped.big#main
         %thead
           %tr
-            %th Name
-            %th(width="100") Ride
-            %th(width="170") Check-In Time
-            %th(width="160") Return Time
+            %th(ng-click="orderOn('last_name')") Name
+            %th(width="100" ng-click="orderOn('ride')") Ride
+            %th(width="170" ng-click="orderOn('checkin_time')") Check-In Time
+            %th(width="160" ng-click="orderOn('return_time')") Return Time
             %th(width="200") Emer. Contact
         %tbody
-          %tr(ng-repeat="reg in registrations | filter:search")
+          %tr(ng-repeat="reg in registrations | filter:search | orderBy:order_by:order_direction")
             %td
               {{reg.first_name.slice(0,12)}}
               {{reg.last_name.slice(0,12)}}
