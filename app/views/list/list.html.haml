@@ -9,11 +9,11 @@
 
   %body
   .outer
-    = image_tag("index2013.jpg", :size =>"850x148")
+    = image_tag("index2014.png", :size =>"850x148")
     .navbar
       .navbar-inner
         %a.brand(href="#")
-          I Care 2013 Classic - Riders
+          I Care 2014 Classic - Riders
         %input(ng-model="search" style="margin-top:6px;" placeholder="Search")
     .outer(ng-controller="ListCtrl")
       %table.table-striped.big#main
@@ -64,8 +64,8 @@
               %option 20 mi
               %option 50 km
               %option 100 km
-              %option 100mi flat
-              %option 100mi hilly
+              %option 100 mi flat
+              %option 100 mi hilly
           %p
             Band Number:&nbsp;
             %input(ng-model="edit_me.bib_number")
