@@ -16,7 +16,7 @@ end
 
 gem 'mongrel'
 gem 'haml'
-gem 'mysql'
+gem 'mysql', '2.8.1'
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
